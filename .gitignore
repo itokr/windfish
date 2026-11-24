@@ -1,0 +1,6 @@
+# Project data directories
+analysis_data/
+raw_data/
+
+# macOS
+.DS_Store
