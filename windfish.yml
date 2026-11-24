@@ -1,0 +1,43 @@
+name: windfish
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+
+  # Core data science
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+
+  # Reading data files
+  - openpyxl        # .xlsx (GEM tracker)
+  - xlrd            # older .xls files
+  - pyarrow         # fast parquet/feather I/O
+  - requests        # downloading from APIs / WFS endpoints
+  - tqdm
+
+  # Plotting
+  - matplotlib
+  - seaborn
+  - plotly
+
+  # Interactive maps
+  - folium          # Leaflet maps + MarkerCluster
+  - ipyleaflet      # alternative interactive maps
+
+  # Geospatial (for lease polygons and fisheries overlays)
+  - geopandas
+  - shapely
+  - pyproj
+  - fiona
+  - rasterio
+  - cartopy         # static publication-quality maps
+  - contextily      # basemap tiles for static maps
+
+  # Jupyter
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - ipywidgets
